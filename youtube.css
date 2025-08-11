@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    height: 40px;
+    padding: 20px 40px 20px 40px;
+}
+.logo{
+    width: 100px;
+}
+.right-box{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+}
+.middle-box{
+    flex:2;
+}
+.left-box{
+    flex:1;
+}
+.search-box {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+
+}
+.create-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+.create-btn:hover {
+    background-color: rgb(220, 219, 219);
+    cursor: pointer;
+}
