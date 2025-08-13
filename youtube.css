@@ -5,41 +5,162 @@ body {
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: aquamarine;
+    align-items: center;
     height: 40px;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px;
 }
 .logo{
     width: 100px;
 }
 .right-box{
-    flex:1;
+    flex: 1;
     display: flex;
     justify-content: flex-end;
+    gap: 23px;
 }
+
+.right-box img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.right-box div {
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+}
+.right-box div:hover {
+  background-color: rgb(230, 230, 230);
+}
+.right-box div span {
+  background-color: rgb(208, 58, 58);
+  padding: 0.5px 4.3px;
+  border-radius: 30px;
+  border: 1px solid white;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 1px;
+  top: 7px;
+  font-size: smaller;
+}
+.right-box div i {
+  font-size: 25px;
+}
+
 .middle-box{
-    flex:2;
+    flex: 2;
+    display: flex;
 }
 .left-box{
-    flex:1;
+    flex: 1;
 }
-.search-box {
+
+.input-box {
     width: 100%;
-    height: 50px;
-    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 238, 238);
+    border: 1px solid black;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.input-box input{
+    width: 89%;
+    height: 40px;
     padding-left: 20px;
-    font-size: 15px;
-    border: none;
     outline: none;
+    border: none;
+}
+
+.input-box div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 11%;
+}
+.input-box div i {
+    font-size: 20px;
+    margin-left: 20px;
+}
+#mic-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(241, 238, 238);
+}
+#mic-icon div {
+    font-size: 25px;
+    font-weight: lighter;
+}
+#mic-icon:hover {
+    background-color: rgb(220, 219, 219);
+    cursor: pointer;
 
 }
 .create-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 18px;
     border: none;
+    padding-right: 16px;
+    gap: 5px;
 }
 .create-btn:hover {
     background-color: rgb(220, 219, 219);
     cursor: pointer;
+}
+
+.create-btn i {
+    font-size: 33px;
+    font-weight: lighter;
+}
+.create-btn span {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* .example {
+  display: flex;
+}
+.one {
+  flex: 50%;
+}
+.two {
+  flex: 35%;
+}
+.three {
+  flex: 15%;
+} */
+
+.one {
+  width: 60%;
+  height: 400px;
+  position: relative;
+}
+.one div {
+  height: 50px;
+  width: 100px;
+  background-color: black;
+  position: absolute;
+  top: 45%;
+  left: 320px;
 }
