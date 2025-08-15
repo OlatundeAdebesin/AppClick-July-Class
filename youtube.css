@@ -103,7 +103,7 @@ nav{
     display: flex;
     align-items: center;
     background-color: rgb(241, 238, 238);
-    border: 1px solid black;
+    border: 1px solid rgb(209, 199, 199);
     border-radius: 40px;
     overflow: hidden;
 }
@@ -171,11 +171,41 @@ nav{
     font-weight: bold;
 }
 
-
-
-
-
-
+/* This is for the video section */
+section {
+padding:40px;
+display: flex;
+gap: 20px;
+}
+.video-image {
+  width: 430px;
+  border-radius: 15px;
+}
+.video-image:hover {
+border-radius: 0px;
+cursor: pointer;
+}
+.channel-image{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.video-info {
+display: flex;
+gap: 10px;
+margin-top: 10px;
+width: 430px;
+}
+.video-title {
+  margin: 0px
+}
+.video-author {
+  margin: 0px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+}
 
 
 
