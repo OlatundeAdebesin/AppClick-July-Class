@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: roboto, sans-serif;
 }
 nav{
     display: flex;
@@ -18,7 +19,6 @@ nav{
     height: 50px;
     flex-wrap: nowrap;
     overflow: hidden;
-    position: relative;
   justify-content:left;
     flex: 1;
 }
@@ -29,7 +29,6 @@ nav{
   border-radius: 50%;
   display:flex;
   align-items: center;
-  justify-content: center;
   font-size: 25px;
   font-weight: lighter;
 }
@@ -46,15 +45,18 @@ nav{
 .left-box div img {
     width: 90px;
     height: 80%;
-    margin-left: 50px;
 }
-.left-box div span {
+
+.logo {
+    position:relative
+}
+.logo span {
     font-size: 12px;
     font-family: sans-serif;
     font-weight: lighter;
     position:absolute;
     top: -1.7px;
-    left: 168px
+    right: -60px;
 }
 .right-box{
     flex: 1;
@@ -206,8 +208,23 @@ article {
   display: flex;
   flex-direction: column;
 }
-
-
+article:hover {
+  background-color: rgb(220, 219, 219);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.video {
+position: relative;
+}
+.video span {
+  position: absolute;
+  top: 200px;
+  right: 30px;
+  color: white;
+  background-color: rgb(115, 99, 99);
+  padding: 2px 5px;
+  border-radius: 5px;
+}
 
 
 /* .example {
