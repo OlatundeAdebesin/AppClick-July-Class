@@ -3,12 +3,51 @@ body {
     padding: 0;
     font-family: roboto, sans-serif;
 }
+#page-container1 {
+  padding: 0px 30px;
+  display: flex;
+  gap: 20px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+p {
+  margin: 0;
+  font-size: 12px;
+}
+.sidebar {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 0px 0px 0px;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    padding: 20px 40px;
+    padding: 20px 0px;
+}
+.secondnav {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+.secondnav button {
+    background-color: rgb(241, 238, 238);
+    border: none;
+    padding: 8px 11px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.secondnav button:hover {
+    cursor: pointer;
 }
 .left-box{
   width: 100%;
@@ -175,7 +214,7 @@ nav{
 
 /* This is for the video section */
 section {
-padding:40px;
+padding:30px;
 display: flex;
 gap: 20px;
 }
