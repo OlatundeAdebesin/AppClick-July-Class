@@ -254,6 +254,8 @@ article:hover {
 }
 .video {
 position: relative;
+display: flex;
+flex-wrap: wrap;
 }
 .video span {
   position: absolute;
